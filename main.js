@@ -18,7 +18,7 @@ camera.position.setY(10);
 
 
 
-const skinTexture = new THREE.TextureLoader().load('/assets/img/skin.jpg');
+const skinTexture = new THREE.TextureLoader().load('assets/img/skin.jpg');
 const geometry = new THREE.TorusGeometry( 10, 3, 16, 100)
 const material = new THREE.MeshStandardMaterial( {map:skinTexture});
 const torus = new THREE.Mesh( geometry, material );
@@ -65,7 +65,7 @@ Array(200).fill().forEach(addStar)
 
 //load a simple jpeg image using threejs TextureLoader
 //use a callback function to be notified when the images done loading
-const cloudTexture = new THREE.TextureLoader().load('/assets/img/cloud.jpg');
+const cloudTexture = new THREE.TextureLoader().load('assets/img/cloud.jpg');
 scene.background = cloudTexture;
 
 // Create a cube with custom texture:
@@ -80,7 +80,7 @@ scene.add(skinCube);
 
 // Create Skin Moon
 //using skin texture from skinCube
-const paperTexture = new THREE.TextureLoader().load('/assets/img/paper.webp')
+const paperTexture = new THREE.TextureLoader().load('assets/img/paper.webp')
 
 const skinMoon = new THREE.Mesh(
     new THREE.SphereGeometry(3,32,32),
